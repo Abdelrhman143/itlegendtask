@@ -7,10 +7,14 @@ import CommentsSection from "./CommentsSection";
 export default function MainContent() {
   return (
     <div className="basis-3/5">
-      <VideoSection />
+      <div className="top-0 z-10 hidden lg:block">
+        <VideoSection />
+      </div>
       <SocialMedia />
       <CourseStats />
-      <CommentsSection />
+      <div className="hidden lg:block">
+        <CommentsSection />
+      </div>
     </div>
   );
 }

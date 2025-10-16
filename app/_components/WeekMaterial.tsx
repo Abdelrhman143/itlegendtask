@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Lesson from "./Lesson";
+import { MinusIcon, PlusIcon } from "lucide-react";
 
 type props = { title: string };
 type Lessons = {
@@ -43,17 +46,26 @@ export default function WeekMaterial({ title }: props) {
     },
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="border-gray-100 border-2 px-4 py-8 mt-10 max-w-[425px] mx-auto">
-      <h3 className="font-semibold mb-2">{title}</h3>
-      <p className="text-gray-400">
-        Advanced story telling techniques for writers personas Characters &
-        plats
-      </p>
-      <div className="mt-5 pb-5">
-        {lessons.map((lesson) => (
-          <Lesson key={lesson.title} lesson={lesson} />
-        ))}
+      <div className="flex justify-between">
+        <h3 className="font-semibold mb-2">{title}</h3>
+        <span onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
+          {isOpen ? <PlusIcon /> : <MinusIcon />}
+        </span>
+      </div>
+      <div className={`${isOpen ? "hidden" : "block"}`}>
+        <p className="text-gray-400">
+          Advanced story telling techniques for writers personas Characters &
+          plats
+        </p>
+        <div className="mt-5 pb-5 divide-y">
+          {lessons.map((lesson) => (
+            <Lesson key={lesson.title} lesson={lesson} />
+          ))}
+        </div>
       </div>
     </div>
   );

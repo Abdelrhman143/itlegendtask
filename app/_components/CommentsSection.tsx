@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 
 export default function CommentsSection() {
   return (
-    <div className="mt-15">
+    <div className="lg:mt-15">
       <h2 className="text-3xl font-semibold mb-10">Comments</h2>
       <div className="divide-y divide-gray-200">
         <Comment />
