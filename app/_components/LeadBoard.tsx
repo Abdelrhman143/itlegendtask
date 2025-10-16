@@ -9,8 +9,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { GraduationCap } from "lucide-react";
-import { DialogClose } from "@radix-ui/react-dialog";
-import { Button } from "@/components/ui/button";
 
 export default function LeadBoard() {
   return (

@@ -18,7 +18,7 @@ export default function VideoSection() {
     <div className="relative ">
       {!isPlaying && (
         <div
-          className="absolute lg:rounded-sm bg-black/25  w-full h-full cursor-pointer flex items-center justify-center"
+          className="absolute lg:rounded-sm bg-black/25 z-200 w-full h-full cursor-pointer flex items-center justify-center"
           onClick={handlePlay}
         >
           <PlayCircleIcon className="absolute text-white  w-15 h-15" />
