@@ -17,7 +17,7 @@ export default function Home() {
           <MainContent />
           {/* righ side */}
           <CourseMaterial />
-          <div className="lg:hidden">
+          <div className="lg:hidden" id="comments">
             <CommentsSection />
           </div>
         </div>

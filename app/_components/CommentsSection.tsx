@@ -13,8 +13,8 @@ export default function CommentsSection() {
         <Comment />
       </div>
       <textarea
-        id="w3review"
-        name="w3review"
+        id="write-comment"
+        name="write-comment"
         maxLength={300}
         placeholder="Write A Comment"
         className="rounded-sm p-6 shadow-xl border-2 border-gray-100 w-full mt-10 h-50"
