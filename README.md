@@ -3,6 +3,10 @@
 This repository contains a take-home task for a job application at ItLegend company.  
 The project is built with Next.js and uses shadcn UI, Tailwind CSS, and lucide-react. It has been deployed to Netlify.
 
+## Share this project
+
+- Live demo (Netlify): <https://itlegendtask.netlify.app/>
+
 ## Tech Stack
 
 - Next.js (App Router)
@@ -110,10 +114,6 @@ To deploy on Netlify:
    - `.next` (for standard Next.js builds)
    - or `out` if you export a static site with `next export`
 5. (Optional) If you use Netlify's Next.js plugin or the Next on Netlify adapter, follow their docs for optimal configuration.
-
-## Share this project
-
-- Live demo (Netlify): <https://itlegendtask.netlify.app/>
 
 ## Notes
 
