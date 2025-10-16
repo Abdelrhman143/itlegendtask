@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ItLegend Task — Next.js Project
 
-## Getting Started
+This repository contains a take-home task for a job application at ItLegend company.  
+The project is built with Next.js and uses shadcn UI, Tailwind CSS, and lucide-react. It has been deployed to Netlify.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js (App Router)
+- shadcn UI
+- Tailwind CSS
+- lucide-react
+- Deployed on Netlify
+
+## Features
+
+- Responsive UI components with shadcn and Tailwind
+- Iconography via lucide-react
+- Local quiz/pdf viewer UI for lessons
+- Simple lesson list with locked/unlocked states
+
+## Prerequisites
+
+- Node.js 16+ (recommended Node 18+)
+- npm, yarn, or pnpm
+- (Optional) Netlify account for deployment
+
+## Install (local)
+
+Clone the repo and install dependencies:
+
+Using npm:
+
+```bash
+git clone <REPO_URL>
+cd itlegendtask
+npm install
+```
+
+Using yarn:
+
+```bash
+git clone <REPO_URL>
+cd itlegendtask
+yarn
+```
+
+Using pnpm:
+
+```bash
+git clone <REPO_URL>
+cd itlegendtask
+pnpm install
+```
+
+## Run (development)
+
+Start the dev server:
+
+npm:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+pnpm:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build & Preview (production)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Build the app:
 
-## Deploy on Vercel
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Preview the production build:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```
+
+## Netlify Deployment Notes
+
+To deploy on Netlify:
+
+1. Push this repository to your Git provider (GitHub, GitLab, Bitbucket).
+2. In Netlify, create a new site and connect the repository.
+3. Set the build command to:
+   - `npm run build` (or `yarn build`, `pnpm build`)
+4. Set the publish directory to:
+   - `.next` (for standard Next.js builds)
+   - or `out` if you export a static site with `next export`
+5. (Optional) If you use Netlify's Next.js plugin or the Next on Netlify adapter, follow their docs for optimal configuration.
+
+## Share this project
+
+- Live demo (Netlify): <https://itlegendtask.netlify.app/>
+
+## Notes
+
+- If PDFs do not download automatically, browser behavior depends on response headers; adjust server headers if needed.
+- No environment variables are required for basic local usage. Add any runtime configuration in .env if needed.
+
+## License / Contact
+
+- This project is a coding task for ItLegend.
+- For questions or to share feedback, add your contact info here.
