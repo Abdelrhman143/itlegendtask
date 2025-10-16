@@ -7,16 +7,18 @@ export default function ProgressBar() {
     <div className="relative">
       <Progress value={value} className="mt-15 mb-15" />
       <span
-        className={`p-1 rounded-full border-2 text-[#485293] border-[#C8C8C8] text-center absolute left-[${
-          value - 3
-        }%] -top-12`}
+        style={{
+          left: `${value}%`,
+          transform: "translateX(-50%)",
+          top: "-3rem",
+        }}
+        className={`p-1 rounded-full border-2 text-[#485293] border-[#C8C8C8] text-center absolute `}
       >
         you
       </span>
       <span
-        className={`text-center absolute left-[${
-          value - 3
-        }%] top-3 text-[#485293]`}
+        style={{ left: `${value}%`, transform: "translateX(-50%)" }}
+        className={`text-center absolute  top-3 text-[#485293]`}
       >
         {value}%
       </span>
