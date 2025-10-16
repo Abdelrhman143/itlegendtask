@@ -2,6 +2,7 @@ import React from "react";
 import VideoSection from "./VideoSection";
 import SocialMedia from "./SocialMedia";
 import CourseStats from "./CourseStats";
+import CommentsSection from "./CommentsSection";
 
 export default function MainContent() {
   return (
@@ -9,6 +10,7 @@ export default function MainContent() {
       <VideoSection />
       <SocialMedia />
       <CourseStats />
+      <CommentsSection />
     </div>
   );
 }
